@@ -88,7 +88,6 @@ describe('Formulario de Consultoria', () => {
 
     })
 
-
     it('Deve validar campos obrigatórios', () => {
         cy.iniciar()
         cy.submeterLogin('papito@webdojo.com', 'katana123')
