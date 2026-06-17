@@ -24,6 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+import 'cypress-real-events'
 
 Cypress.Commands.add('iniciar', () => {
     cy.viewport(1440, 900)
