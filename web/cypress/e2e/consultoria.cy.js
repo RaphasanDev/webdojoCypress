@@ -4,8 +4,7 @@ import { commands } from '../support/commands'
 describe('Formulario de Consultoria', () => {
 
     beforeEach(() => {
-        cy.iniciar()
-        cy.submeterLogin('papito@webdojo.com', 'katana123')
+        cy.login()
         cy.goTo('Formulário', 'Consultoria')
 
     })

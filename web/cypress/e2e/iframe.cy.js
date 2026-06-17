@@ -4,10 +4,9 @@
 
 describe('iframe', () => {
     it.only('Deve tocar o video', () => {
-        cy.iniciar()
-        cy.submeterLogin('papito@webdojo.com', 'katana123')
-        cy.contains('Video').click()
-
+        cy.login() 
+        cy.contains('Video')
+        .click()
 
         cy.get('iframe[title="Video Player"]')
             .should('exist')

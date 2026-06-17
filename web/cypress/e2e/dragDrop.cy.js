@@ -3,8 +3,7 @@
 
 describe('drag and drop', () => {
     it('Deve arrastar o elemento e soltar no destino', () => {
-        cy.iniciar()
-        cy.submeterLogin('papito@webdojo.com', 'katana123')
+        cy.login()
         cy.contains('Kanban').click()
 
         const dataTransfer = new DataTransfer()
